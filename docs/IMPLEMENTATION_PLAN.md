@@ -802,19 +802,23 @@ The first coding session should complete only **Phase 0 and Phase 1**:
 
 ## 19. Current Project Status
 
-Current verified project status after Phase 0 and Phase 1 foundation work:
+Verified project status as of 2026-11-24:
 
 | Area | Status |
 |---|---|
-| Game design documentation | Defined |
-| Technology tree documentation | Defined |
-| Manufacturing specification | Defined |
-| Technical architecture | Defined |
-| Implementation plan | Defined |
-| Repository scaffold | Present; Git initialized; ignore rules and setup documentation added |
-| Frontend application | React, TypeScript, Vite, and Tailwind shell implemented; tests, lint, typecheck, and build passed |
-| Backend application | FastAPI health API and local CORS implemented; backend checks passed |
-| PostgreSQL integration | Not started |
-| Milestone 01 gameplay | Not started |
+| Game design documentation | Present in `docs/` |
+| Technology tree documentation | Present in `docs/` |
+| Manufacturing specification | Present in `docs/` |
+| Technical architecture | Present in `docs/` |
+| Implementation plan | Present in `docs/` |
+| Phase 0 — repository and development environment | Complete; monorepo structure, Git, ignore rules, README, and local setup instructions are present |
+| Phase 1 — frontend and backend skeletons | Complete; React, TypeScript, Vite, Tailwind CSS, FastAPI health API, local CORS, and real frontend health request are implemented |
+| Phase 2 — PostgreSQL and persistence foundation | Complete; local PostgreSQL 18 service, environment-based SQLAlchemy connection/session, Alembic configuration, and the documented minimum Milestone 01 schema are implemented |
+| Development database | `tech_empire_dev` is connected and migrated to `0002_milestone01_persistence` |
+| Integration test database | `tech_empire_test` is isolated and migrated to `0002_milestone01_persistence` |
+| Persistence schema | Eight documented minimum tables are present; no gameplay operations are implemented |
+| Backend verification | 16 tests passed; PostgreSQL integration checks passed; Alembic check reported no new upgrade operations |
+| Frontend verification | 6 tests passed; typecheck, lint, and production build passed; user screenshot confirmed the UI displays Backend: Connected |
+| Phase 3 and later gameplay systems | Not started |
 
-PostgreSQL client was not detected during Phase 0 verification and is not required until Phase 2. Do not assume a task is complete merely because files were generated; verify the files, run the relevant commands, and test the behavior.
+The Phase 0 environment observation that the PostgreSQL client was not detected applied at that time; PostgreSQL 18 was subsequently configured for Phase 2 on a separate local service at port 5433. Do not assume a task is complete merely because files were generated; verify the files, run the relevant commands, and test the behavior.
