@@ -20,10 +20,11 @@ Verified development machine versions:
 - Node.js 24.11.1 and npm 11.8.0
 - Python 3.12.10
 - Git 2.51.0.windows.2
-- PostgreSQL client (`psql`): not installed/detected; it is not needed until Phase 2
+- PostgreSQL 14 and 18 installation folders are present. The PostgreSQL 18 client reports version 18.3 at `C:\Program Files\PostgreSQL\18\bin\psql.exe`; add its `bin` directory to `PATH` only if you want to run `psql` without the full path.
+- PostgreSQL 18 Windows service (`postgresql-x64-18`): installed, stopped, and disabled. No PostgreSQL 14 Windows service was detected. The default PostgreSQL port (5432) had no listener during this check.
 - Visual Studio Code CLI: available
 
-The project does not require PostgreSQL, Docker, Redis, or cloud services in Phase 0/1.
+The database server does not need to be running for Phase 0/1. PostgreSQL service setup and database connectivity are part of Phase 2. Docker, Redis, and cloud services are not required for local development.
 
 ## Run locally
 
