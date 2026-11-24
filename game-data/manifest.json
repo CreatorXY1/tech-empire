@@ -1,0 +1,20 @@
+{
+  "content_id": "tech_empire_core",
+  "content_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "description": "Initial Tech Empire Milestone 01 game content.",
+  "capabilities": [
+    {
+      "id": "basic_metalworking",
+      "name": "Basic Metalworking",
+      "kind": "facility",
+      "description": "A basic workshop capability for simple metalworking operations."
+    },
+    {
+      "id": "sheet_metal_shearing",
+      "name": "Sheet Metal Shearing",
+      "kind": "equipment",
+      "description": "The capability to shear standardized sheet-metal stock."
+    }
+  ]
+}
