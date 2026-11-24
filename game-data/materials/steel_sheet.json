@@ -1,0 +1,8 @@
+{
+  "id": "steel_sheet",
+  "name": "Steel Sheet",
+  "description": "Standardized steel sheet stock used as the input for the basic metal bracket recipe.",
+  "category": "raw_material",
+  "unit": "sheet",
+  "purchase_price": "120.00"
+}
